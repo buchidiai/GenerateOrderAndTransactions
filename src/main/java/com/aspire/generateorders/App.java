@@ -100,15 +100,12 @@ public class App {
 
         String TRANSTYPE = "CREATED";
 
-        List<OrderTransaction> allTrans = new ArrayList<>();
-
         for (StockOrder o : allStockOrders) {
 
             //int quantity, Timestamp datetime, String transactiontype, String stock_order_id
-            OrderTransaction or = new OrderTransaction(o.getQuantity(), o.getDatetime(), TRANSTYPE, String.valueOf(o.getId()));
+            OrderTransaction ot = new OrderTransaction(o.getQuantity(), o.getDatetime(), TRANSTYPE, String.valueOf(o.getId()));
 
-            allTrans.add(or);
-            System.out.println(or.toString());
+            System.out.println(ot.toString());
         }
 
     }
