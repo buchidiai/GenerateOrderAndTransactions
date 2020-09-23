@@ -1,0 +1,4 @@
+com/aspire/generateorders/App.class
+com/aspire/generateorders/OrderTransaction.class
+com/aspire/generateorders/StockOrder.class
+com/aspire/generateorders/Stock.class
